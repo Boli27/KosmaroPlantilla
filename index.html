@@ -4,6 +4,16 @@
 <head>
   <title>Koŝmaro</title>
   <style>
+    #billboard .swiper-slide{
+      padding-top: 80px;
+    }
+    #billboard img{
+      width: 380px; height: 620px;
+    }
+    #billboard .image-holder{
+      display: flex; justify-content: flex-end;
+    }
+
     .product-card-custom {
       display: flex;
       flex-direction: column;
@@ -83,11 +93,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap"
     rel="stylesheet">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <script src="js/modernizr.js"></script>
 </head>
@@ -189,27 +199,26 @@
     <div class="search-popup-container">
 
       <form role="search" method="get" class="search-form" action="">
-        <input type="search" id="search-form" class="search-field" placeholder="Buscar..." value=""
-          name="s" />
+        <input type="search" id="search-form" class="search-field" placeholder="Buscar..." value="" name="s" />
         <button type="submit" class="search-submit"><svg class="search">
             <use xlink:href="#search"></use>
           </svg></button>
       </form>
 
-      <h5 class="cat-list-title">Busca Categorias</h5>
+      <h5 class="cat-list-title">Buscar Categorias</h5>
 
       <ul class="cat-list">
         <li class="cat-list-item">
-          <a href="#" title="Mobile Phones">Spooky</a>
+          <a href="#" title="Spooky">Spooky</a>
         </li>
         <li class="cat-list-item">
-          <a href="#" title="Smart Watches">Videojuegos</a>
+          <a href="#" title="Videojuegos">Videojuegos</a>
         </li>
         <li class="cat-list-item">
-          <a href="#" title="Headphones">Caricaturas</a>
+          <a href="#" title="Caricaturas">Caricaturas</a>
         </li>
         <li class="cat-list-item">
-          <a href="#" title="Accessories">Promociones</a>
+          <a href="#" title="Promociones">Promociones</a>
         </li>
       </ul>
 
@@ -237,7 +246,8 @@
             <a class="navbar-brand" href="index.html">
               <img src="images/main-logo.png" class="logo">
             </a>
-            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"
+              data-bs-target="#bdNavbar"></button>
           </div>
           <div class="offcanvas-body">
             <ul id="navbar" class="navbar-nav text-uppercase justify-content-end align-items-center flex-grow-1 pe-3">
@@ -263,7 +273,7 @@
                 <div class="separator"></div> <!-- Línea vertical separadora -->
               </li>
               <li class="nav-item">
-                <a class="nav-link me-4" href="#yearly-sale">Promocion</a>
+                <a class="nav-link me-4" href="#yearly-sale">Promoción</a>
               </li>
               <li class="nav-item">
                 <div class="separator"></div> <!-- Línea vertical separadora -->
@@ -298,9 +308,9 @@
             </ul>
           </div>
         </div>
-        
-        
-        </div>
+
+
+      </div>
       </div>
     </nav>
   </header>
@@ -314,14 +324,13 @@
             <div class="row d-flex align-items-center">
               <div class="col-md-6">
                 <div class="banner-content">
-                  <h1 class="display-2 text-uppercase text-dark pb-5">De los viejuegos a tu pared!</h1>
+                  <h1 class="display-2 text-uppercase text-dark pb-5">De los videojuegos a tu pared!</h1>
                   <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Descubrir</a>
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="image-holder" style="display: flex; justify-content: flex-end;">
-                  <img src="images/Hollow-Knigth.png" alt="banner"
-                    style="width: 380px; height: 620px; margin-top: 80px; max-width: 100%; height: auto;">
+                <div class="image-holder" >
+                  <img src="images/Hollow-Knigth.png" alt="banner">
                 </div>
               </div>
             </div>
@@ -332,34 +341,33 @@
           <div class="container">
             <div class="row d-flex flex-wrap align-items-center">
               <div class="col-md-6">
-                <div class="banner-content" style="margin-top: 50px;">
+                <div class="banner-content">
                   <h1 class="display-2 text-uppercase text-dark pb-5">Vive el terror de forma divertida</h1>
                   <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Descubrir</a>
                 </div>
               </div>
 
               <div class="col-md-6">
-                <div class="image-holder" style="display: flex; justify-content: flex-end;">
-                  <img src="images/whatcat.png" alt="banner" style="max-width: 100%; height: auto; margin-top: 50px; ">
+                <div class="image-holder">
+                  <img src="images/whatcat.png" alt="banner" style="width: 500px;">
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="swiper-slide">
+        <div class="swiper-slide" >
           <div class="container">
             <div class="row d-flex align-items-center">
               <div class="col-md-6">
-                <div class="banner-content" style="margin-top: 50px;">
-                  <h1 class="display-2 text-uppercase text-dark pb-5">decora tu fiesta favorita</h1>
+                <div class="banner-content">
+                  <h1 class="display-2 text-uppercase text-dark pb-5">Decora tu fiesta favorita</h1>
                   <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Descubrir</a>
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="image-holder" style="display: flex; justify-content: flex-end;">
-                  <img src="images/calabaza.png" alt="banner"
-                    style=" margin-top: 100px; max-width: 100%; height: auto;">
+                <div class="image-holder">
+                  <img src="images/calabaza.png" alt="banner" style="width: 580px;">
                 </div>
               </div>
             </div>
@@ -370,7 +378,6 @@
     </div>
 
     <div class="swiper-pagination"></div>
-    </div>
   </section>
   <section id="company-services" class="padding-large">
     <div class="container">
@@ -396,8 +403,8 @@
               </svg>
             </div>
             <div class="icon-box-content">
-              <h3 class="card-title text-uppercase text-dark">Calidad Garantizada</h3>
-              <p>Fracicacion en los mejores materiales. </p>
+              <h3 class="card-title text-uppercase text-dark">Alta Calidad</h3>
+              <p>Fabricacion en los mejores materiales. </p>
             </div>
           </div>
         </div>
@@ -409,7 +416,7 @@
               </svg>
             </div>
             <div class="icon-box-content">
-              <h3 class="card-title text-uppercase text-dark">Dias de oferta</h3>
+              <h3 class="card-title text-uppercase text-dark">Días de oferta</h3>
               <p>Aprovecha las ofertas en las mejores temporadas.</p>
             </div>
           </div>
@@ -788,15 +795,15 @@
         <!-- Sección de texto y botones -->
         <div class="col-md-6 d-flex flex-column justify-content-center text-center">
           <div class="text-content banner-content">
-              <h3 class="text-light">15% de descuento</h3>
-              <h2 class="display-2 pb-5 text-uppercase text-light" style="font-size: 90px;">Promoción de 
-                  <span style="color: rgb(255, 106, 0); font-size: 120px;">HALLOWEEN</span>
-              </h2>
-              <a href="#billboard" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Descubrir</a>
+            <h3 class="text-light">15% de descuento</h3>
+            <h2 class="display-2 pb-5 text-uppercase text-light" style="font-size: 90px;">Promoción de
+              <span style="color: rgb(255, 106, 0); font-size: 120px;">HALLOWEEN</span>
+            </h2>
+            <a href="#billboard" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Descubrir</a>
           </div>
-      </div>
-      
-  
+        </div>
+
+
         <!-- Sección de imagen -->
         <div class="col-md-6 d-flex justify-content-end" style="padding-right: 0;">
           <div class="image-holder">
@@ -806,7 +813,7 @@
       </div>
     </div>
   </section>
-  
+
   <section id="testimonials" class="position-relative">
     <div class="container">
       <div class="row">
@@ -826,7 +833,8 @@
               <div class="swiper-slide text-center d-flex justify-content-center">
                 <div class="review-item col-md-10">
                   <i class="icon icon-review"></i>
-                  <blockquote> "¡Las calcomanías de esta empresa son excepcionales! La calidad es impresionante y la variedad es justo lo que necesitaba para personalizar mi laptop. ¡Definitivamente volveré por más!"
+                  <blockquote> "¡Las calcomanías de esta empresa son excepcionales! La calidad es impresionante y la
+                    variedad es justo lo que necesitaba para personalizar mi laptop. ¡Definitivamente volveré por más!"
                   </blockquote>
                   <div class="rating">
                     <svg class="star star-fill">
@@ -853,7 +861,8 @@
               <div class="swiper-slide text-center d-flex justify-content-center">
                 <div class="review-item col-md-10">
                   <i class="icon icon-review"></i>
-                  <blockquote>"Compré calcomanías para mi negocio y superaron mis expectativas. El proceso de pedido fue fácil y la entrega rápida. Los diseños son únicos y llamativos. ¡Recomendado al 100%!"
+                  <blockquote>"Compré calcomanías para mi negocio y superaron mis expectativas. El proceso de pedido fue
+                    fácil y la entrega rápida. Los diseños son únicos y llamativos. ¡Recomendado al 100%!"
                   </blockquote>
                   <div class="rating">
                     <svg class="star star-fill">
@@ -904,9 +913,10 @@
           <div class="col-md-5 col-sm-12">
             <form class="subscription-form validate">
               <div class="input-group flex-wrap">
-                <input class="form-control btn-rounded-none" type="email" name="EMAIL"
-                  placeholder="Correo electrónico" required="">
-                  <button class="btn btn-medium custom-btn text-uppercase btn-rounded-none" type="submit" name="subscribe">Suscríbete</button>
+                <input class="form-control btn-rounded-none" type="email" name="EMAIL" placeholder="Correo electrónico"
+                  required="">
+                <button class="btn btn-medium custom-btn text-uppercase btn-rounded-none" type="submit"
+                  name="subscribe">Suscríbete</button>
 
               </div>
             </form>
@@ -966,8 +976,8 @@
                 </div>
               </div>
             </div>
-            
-            
+
+
             <div class="col-lg-3 col-sm-6 pb-3">
               <div class="footer-menu contact-item">
                 <h5 class="widget-title text-uppercase pb-2">Contactanos </h5>
@@ -996,10 +1006,10 @@
             </div>
           </div>
         </div>
-        
+
         <div class="col-md-3 col-sm-6">
           <div class="copyright">
-            <p>© Copyright 2024 Kosmaro. 
+            <p>© Copyright 2024 Koŝmaro.
             </p>
           </div>
         </div>
